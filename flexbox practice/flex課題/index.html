@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex練習</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header id="header">
+    <h1>TITLE</h1>
+    <nav>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">SERVICE</a></li>
+        <li><a href="#">COMPANY</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div id="container"><!-- Flex container (parent) -->
+  
+      <div class="contents"><!-- Flex item (child) -->
+        <img src="images/sample-image01.jpg" alt="dog">
+        <h2>Hint1</h2>
+        <p>The background color of the main content is <span>burlywood</span>
+          <br>The font for the header and the h2 in the flex items uses Google Fonts' <span>Dosis (Medium 500)</span> (the link tag has already been implemented, so only CSS settings are needed).
+        </p>
+      </div><!-- .contents -->
+  
+      <div class="contents"><!-- Flex item (child) -->
+        <img src="images/sample-image02.jpg" alt="cat">
+        <h2>Hint2</h2>
+        <p>The CSS property applied when hovering the mouse cursor over the flex item is <span>opacity: 0.8</span>.</p>
+      </div><!-- .contents -->
+  
+      <div class="contents"><!-- Flex item (child) -->
+        <img src="images/sample-image03.jpg" alt="birds">
+        <h2>Hint3</h2>
+        <p>The flex items and the images inside the items have <span>border-radius: 0.3rem</span> applied.</p>
+      </div><!-- .contents -->
+  
+      <div class="contents"><!-- Flex item (child) -->
+        <img src="images/sample-image04.jpg" alt="prairie dog">
+        <h2>Hint4</h2>
+        <p>When the browser width is 768px or less, the flex items in the main content are <span>changed from row to column</span>.</p>
+      </div><!-- .contents -->
+  
+      <div class="contents"><!-- Flex item (child) -->
+        <img src="images/sample-image05.jpg" alt="pony">
+        <h2>Hint5</h2>
+        <p>When the browser width is 500px or less, the navigation is <span>changed to column</span>.</p>
+      </div><!-- .contents -->
+  
+      <div class="contents"><!-- Flex item (child) -->
+        <img src="images/sample-image06.jpg" alt="deer">
+        <h2>Hint6</h2>
+        <p>The width of the flex item when the browser width is 768px or more is <span>32%</span>, and when the width is 768px or less, it is set to <span>100%</span>.</p>
+      </div><!-- .contents -->
+  
+    </div><!-- #container -->
+  </main>
+  
+  <footer id="footer">
+    <p><small>&copy;Test.inc</small></p>
+  </footer>
+  </body>
+  
+  </html>
+  

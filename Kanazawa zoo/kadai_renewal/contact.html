@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ | ISHIKAWA ZOO OFFICIAL SITE</title>
+  <meta name="description" content="石川県能美市にあるいしかわ動物園のホームページです。">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/contact.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Montserrat:wght@700&family=Noto+Sans+JP&family=PT+Sans:wght@700&family=Yusei+Magic&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- headerエリア -->
+  <header class="header_area" id="#">
+
+    <div class="header_logo">
+      <h1><a href="index.html"><img src="./image/logo.png" alt="ロゴ"></a></h1>
+    </div>
+
+    <nav class="nav_header">
+      <ul>
+        <li><a href="concept.html">概要<br><small>がいよう</small></a></li>
+        <li><a href="fee.html">料金・時間<br><small>りょうきん・じかん</small></a></li>
+        <li><a href="access.html">アクセス<br><small>あくせす</small></a></li>
+        <li><a href="contact.html">お問い合わせ<br><small>おといあわせ</small></a></li>
+
+      </ul>
+    </nav>
+
+  </header>
+
+  <!-- メインコンテンツ -->
+  <main class="main">
+
+    <div class="title">
+      <h2>お問い合わせ</h2>
+      <p>contact</p>
+    </div>
+
+    <div class="contents">
+
+
+      <div class="contact">
+
+        <div class="contact_contents">
+
+          <h2>お問い合わせフォーム</h2>
+
+          <p class="before_txt">当園について質問やご意見などありましたら<br class="sp_br">お気軽にお問い合わせください。</p>
+
+          <div class="form">
+
+          <form action="#">
+
+  
+                <dl class="form_area">
+
+                  <dt><span class="required">お名前</span></dt>
+                  <dd><input class="input_text" type="text" name="name" required></dd>
+
+                  <dt><span class="required">メールアドレス</span></dt>
+                  <dd><input class="input_text" type="email" name="email" required></dd>
+
+                  <dt><span class="required">お電話番号</span></dt>
+                  <dd><input class="input_text" type="tel" name="tel" required></dd>
+
+                  <dt><span class="required">性別</span></dt>
+                  <dd>
+                    <label class="radio_button"><input type="radio" name="user-type" value="男性">男性</label>
+                    <label class="radio_button"><input type="radio" name="user-type" value="女性">女性</label>
+                    <label class="radio_button"><input type="radio" name="user-type" value="その他">その他</label>
+                  </dd>
+
+                  <dt>年齢</dt>
+                  <dd>
+                    <select class="select_box" name="nenre">
+                      <option value="10代">10代</option>
+                      <option value="20代" selected>20代</option>
+                      <option value="30代">30代</option>
+                      <option value="40代">40代</option>
+                      <option value="50代">50代</option>
+                      <option value="60代以上">60代以上</option>
+                      <option value="不明">不明</option>
+                    </select>
+                  </dd>
+
+                  <dt>お問い合わせ種別</dt>
+                  <dd>
+                    <select class="select_box" name="genre">
+                    <option value="動物について" selected>動物について</option>
+                    <option value="料金・時間について">料金・時間について</option>
+                    <option value="園内施設について">園内施設について</option>
+                    <option value="その他">その他</option>
+                  </select>
+                </dd>
+
+                  <dt><span class="required">お問い合わせ内容</span></dt>
+                  <dd><textarea class="message" name="message"></textarea></dd>
+
+    
+                </dl>
+
+                <p class="submit_txt">ご入力内容をご確認の上、<br class="sp_br">お間違いなければ<br class="sp_br">送信ボタンを押してください。</p>
+
+                <div class="submit_area">
+
+                <button class="submit_button">送信</button>
+
+              </div>
+
+
+          </form>
+
+        </div>
+
+
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+
+  </main>
+
+
+
+
+
+  <!-- topに戻る -->
+  <div class="back">
+    <a href="#">
+      <img src="./image/top.png" alt="modoru">
+      <p>TOPへ</p>
+    </a>
+  </div>
+
+
+  <!-- footerエリア -->
+  <footer class="footer_area">
+
+    <nav class="nav_footer">
+      <ul>
+        <li><a href="concept.html">概要</a></li>
+        <li><a href="fee.html">料金・時間</a></li>
+        <li><a href="access.html">アクセス</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+
+    <p class="footer-tel">TEL:0761-51-8500</p>
+    <p class="footer-adress">〒923-1222　石川県能美市徳山町600番地</p>
+    <p class="copyright"><small>&copy;ISHIKAWA ZOO</small></p>
+
+  </footer>
+
+
+</body>
+
+</html>

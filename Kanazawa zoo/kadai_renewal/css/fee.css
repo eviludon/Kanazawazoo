@@ -1,0 +1,251 @@
+@charset "utf-8";
+
+.title{
+  width: 100%;
+  height: 200px;
+  background-image: url(./../image/fee_title.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 60px;
+  color: #fff;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.title h2{
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.title p{
+  font-size: 18px;
+}
+
+.contents{
+  width: 100%;
+  margin: 30px auto;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.fee_menu{
+  margin-bottom: 30px
+}
+
+.fee_menu ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.fee_menu ul li{
+  width: 50%;
+  background-color: #005780;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bolder;
+  border: solid 0.5px #fff;
+}
+
+.fee_menu ul li:nth-child(2){
+  background-color: #ed6d35;
+}
+
+.fee_menu ul li:nth-child(3){
+  background-color: #e17b34;
+}
+
+.fee_menu ul li:nth-child(4){
+  background-color: #387d39;
+}
+
+
+.fee_menu ul li:hover{
+  background-color: #e1f7ff;
+  color: #005780;
+}
+
+.fee_area{
+  margin-top: 20px;
+}
+
+.fee_contents{
+  margin: 25px auto;
+}
+
+.fee_contents h2{
+  color: #fff;
+  background-color: #005780;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 7px 0 15px;
+  padding: 7px 0 10px 10px;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+}
+
+.fee_contents .orange{
+  background-color: #ed6d35;
+}
+
+.fee_contents .green{
+  background-color: #387d39;  
+}
+
+.fee_contents .brown{
+  background-color: #e17b34;  
+}
+
+
+.fee_contents p{
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.fee_contents table{
+  margin: 20px 0 15px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.fee_contents th,
+.fee_contents td{
+  border: solid 1px #005780;
+  text-align: center;
+  padding: 7px 10px;
+}
+
+.fee_contents th{
+  background-color: #efefef;
+  font-weight: 600;
+  color: #005780;
+}
+
+
+.cation{
+  color: #eb4b2f;
+  font-weight: bolder;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.cation::before{
+  content: '!';
+  display: inline-block;
+  background-color: #eb4b2f;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  font-weight: bold;
+  font-size: 13px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.fee_contents .komidashi{
+  font-size: 20px;
+  font-weight: bold;
+  color: #ed6d35;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: dotted 2px #ed6d35;
+  letter-spacing: 0.1em;
+}
+
+.fee_contents .komidashi::before{
+  content: '';
+  display: inline-block;
+  background-color: #ed6d35;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.kyuen{
+  margin: 15px 0;
+}
+
+.fee_contents .kyuen_tit{
+  font-size: 20px;
+  font-weight: bold;
+  color: #006948;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: dotted 2px #006948;
+  letter-spacing: 0.1em;
+}
+
+.fee_contents .kyuen ul{
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+.fee_contents .kyuen ul li{
+  color: #006948;
+  font-size: 16px;
+  font-weight: bold;
+  list-style-type: square;
+}
+
+.fee_contents .kyuen p{
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.fee_contents .tokuten{
+  background-color: #ed6d35;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 7px 10px;
+  margin-top: 15px;
+}
+
+.fee_contents ul{
+  padding-left: 20px;
+  margin: 15px 0 20px;
+}
+
+.fee_contents ul li{
+  font-size: 14px;
+  font-weight: bolder;
+  list-style-type: square;
+  line-height: 1.8;
+}
+
+
+.fee_contents .kinshi{
+  padding-left: 20px;
+  margin: 15px 0 20px;
+}
+
+.fee_contents .kinshi li{
+  font-size: 14px;
+  font-weight: bolder;
+  list-style-type: square;
+  color: #000;
+  line-height: 1.8;
+}
+
+
+@media(max-width:764px){
+
+  .fee_contents h2{
+    font-size: 20px;
+    margin-top: 7px;
+    padding: 7px 0 10px 10px;
+    letter-spacing: 0;
+  }
+
+  .contents{
+    width: 90%;
+  }
+
+}

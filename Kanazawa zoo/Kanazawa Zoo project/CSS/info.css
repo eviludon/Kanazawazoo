@@ -1,0 +1,238 @@
+/* General reset for margin, padding, and font */
+@charset "utf-8";
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playpen Sans", serif;
+}
+
+/* Body styling */
+body {
+  background-color: rgba(255, 255, 255, 0.678);
+}
+
+.image-store img {
+  max-width: 80%;
+  height: 250px;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Create the "carved" line effect */
+.carved-divider {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background-color: #ddd; /* Light gray background for the line */
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), inset 0 -1px 3px rgba(0, 0, 0, 0.1); /* Carved effect */
+  margin: 20px 0; /* Add some spacing above and below the line */
+}
+
+/* Styling for the container that holds both the heading and the table */
+.commute-container {
+  display: flex;
+  flex-direction: column; /* Stack the content vertically */
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Center the text (h1) */
+  margin: 20px; /* Add margin for spacing */
+}
+
+.roadmap-container img:first-child {
+  height: 240px;
+}
+
+.roadmap-container img{
+  padding: 0 30px;
+}
+
+/* Styling for the table */
+table {
+  width: 80%; /* Sets the width of the table */
+  margin: 20px 0; /* Adds vertical spacing between table and heading */
+  border-collapse: collapse; /* Collapses the borders */
+  background-color: #f4f4f4; /* Sets the background color */
+}
+
+/* Table Header Styling */
+th {
+  background-color: #b46c00; /* Sets background color of headers */
+  color: white; /* Sets text color of headers */
+  padding: 10px; /* Adds padding to header cells */
+  text-align: center; /* Centers the text */
+  font-size: 16px; /* Changes font size */
+}
+
+/* Table Data Styling */
+td {
+  padding: 10px; /* Adds padding to data cells */
+  text-align: center; /* Centers the text in data cells */
+  border: 1px solid #ddd; /* Adds a light border around cells */
+}
+
+/* Table Row Hover Effect */
+tr:hover {
+  background-color: #f2f2f2; /* Changes the background on hover */
+}
+
+/* Table Borders */
+table, th, td {
+  border: 1px solid #ddd; /* Adds borders to the table, header, and data cells */
+}
+
+
+.roadmap-container {
+  display: flexbox;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.roadmap-container img {
+  height: auto;
+  width: 450px;
+}
+/* 
+parking container start */
+.parking-container {
+  display: flex;
+  flex-direction: column; /* Stack the content vertically */
+  align-items: center; /* Center content horizontally */
+  margin: 20px; /* Add margin for spacing */
+  padding-top: 30px;
+  text-align: center; /* Center the text (h1) */
+}
+
+.parking-container img {
+  height: auto;
+  width: 450px;
+   padding: 0 40px;
+}
+
+.parking-container img:nth-child(2){
+  height: 340px;
+}
+
+/*bus container start */
+.bus-container {
+  display: flex;
+  flex-direction: column; /* Stack the content vertically */
+  align-items: center; /* Center content horizontally */
+  margin: 20px; /* Add margin for spacing */
+  padding-top: 30px;
+  text-align: center; /* Center the text (h1) */
+}
+
+.bus-container img {
+  height: auto;
+  width: 450px;
+}
+
+.bus-container h4 {
+  color: rgba(255, 0, 0, 0.473);
+}
+
+
+/*google maps starts here*/
+.google-map-container {
+  display: flex;
+  flex-direction: row; /* Stack the button below the iframe */
+  align-items: center; /* Center the button */
+  justify-content: space-between;
+  margin: 20px;
+  text-align: center;
+}
+
+.google-map-container iframe {
+  width: 600px;
+  height: 450px;
+  margin-right: 20px; /* Add space between iframe and image */
+  flex-shrink: 0;
+}
+
+.directions-image-container {
+display: flex;
+width: 1800px; /* Set width of the image */
+  height: auto;
+}
+.google-map-container img {
+  width: 400px; /* Set width of the image */
+  height: auto;
+}
+
+.google-map-container h1 {
+  color: rgba(0, 0, 0, 0.473);
+  margin-bottom: 15px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-container button {
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  border: solid 3px black;
+  padding-left: 30px;
+  padding-right: 30px;
+  &:hover{
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.6); /* Shine effect */
+    border: solid 2px #66ff00;
+    font-size: 22px;
+    font-weight: bold;
+  }
+}
+
+/* Styling for the section containers */
+.bus-container,
+.parking-container,
+.roadmap-container,
+.google-map-container {
+  padding: 40px 0; /* Add vertical padding to the sections */
+  position: relative;
+  text-align: center;
+}
+
+/* Optional: Customize the section container's background to highlight the divider */
+.bus-container,
+.parking-container,
+.roadmap-container,
+.google-map-container {
+  background-color: #f9f9f9; /* Light background for sections */
+}
+
+/* Optional: Styling for the sections to add some more visual interest */
+.bus-container,
+.parking-container,
+.roadmap-container,
+.google-map-container {
+  border-bottom: 1px solid #ccc; /* Add light border below each container */
+}
+
+
+/* Responsive table for smaller screens */
+@media (max-width: 768px) {
+  table {
+    font-size: 12px; /* Reduce font size for smaller screens */
+    width: 90%; /* Makes the table width 90% of its parent container */
+  }
+
+  th, td {
+    padding: 8px; /* Reduces padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  table {
+    font-size: 10px; /* Further reduce font size on very small screens */
+    width: 100%; /* Ensure the table takes full width */
+  }
+
+  th, td {
+    padding: 5px; /* Further reduces padding on very small screens */
+  }
+}

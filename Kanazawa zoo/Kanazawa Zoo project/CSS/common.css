@@ -1,0 +1,328 @@
+@charset "utf-8";
+
+*,::before,::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playpen Sans", serif;
+}
+
+body {
+  background-color: rgba(255, 255, 255, 0.678);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between !important;
+}
+
+.navbar-brand {
+  margin-top: 15px;
+}
+
+.navbar-nav .nav-link:hover, 
+.navbar-nav .nav-link span:hover {
+  color: green !important; /* Forces the color to green on hover */
+}
+
+ /* Container for the header image */
+.header-container {
+  position: relative;
+  width: 100%;
+  height: 400px;  /* Adjust the height to fit your design */
+  background-color: black;  /* Black background for the entire container */
+  border: 10px solid black;  /* Add black border around the image container */
+  overflow: hidden;  /* Hide anything that overflows */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container to hold images (all images will be absolutely positioned) */
+.header-images {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Each image style */
+.header-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: fadeZoom 25s infinite; /* Adjusted animation duration */
+}
+
+/* Animation for fading and zooming the images */
+@keyframes fadeZoom {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  20%, 80% {
+    opacity: 1;
+    transform: scale(1.1);  /* Slight zoom-in */
+  }
+  40%, 60% {
+    opacity: 0;
+    transform: scale(1);  /* Zoom-out */
+  }
+}
+
+/* Animation for image sliding in and out separately */
+.header-image:nth-child(1) {
+  animation-delay: 0s;  /* First image starts immediately */
+}
+
+.header-image:nth-child(2) {
+  animation-delay: 5s;  /* Second image starts after 5 seconds */
+}
+
+.header-image:nth-child(3) {
+  animation-delay: 10s;  /* Third image starts after 10 seconds */
+}
+
+.header-image:nth-child(4) {
+  animation-delay: 15s;  /* Fourth image starts after 15 seconds */
+}
+
+.header-image:nth-child(5) {
+  animation-delay: 20s;  /* Fifth image starts after 20 seconds */
+}
+
+
+/* Main */
+.main {
+  width: 90%;
+  height: auto;
+  margin: 20px auto;
+}
+
+/* Footer start*/
+.footer_area {
+  background-color: #694b37;
+  margin: 60px auto 0;
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Flexbox for Footer Images and Text */
+.footer-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px; /* Space between footer content and images */
+}
+
+.footer-image-left,
+.footer-image-right {
+  width: 100px; 
+  height: 100px; 
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+}
+
+.footer-image-left {
+  background-image: url('../image/redpanda.png'); 
+}
+
+.footer-image-right {
+  background-image: url('../image/lion-header.png'); 
+}
+
+/* Style for Footer Text */
+
+#follow-us {
+  margin-bottom: 15px;
+}
+
+.footer-text {
+  flex: 1; 
+  text-align: center; 
+  color: #fff;
+}
+
+.nav_footer ul {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.nav_footer ul li {
+  list-style-type: none;
+  margin: 0 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.nav_footer ul li a {
+  text-decoration: none;
+  color: #fff;
+  &:hover {
+    text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.7),  /* Black outline effect */
+    -2px -2px 4px rgba(0, 0, 0, 0.7),
+    2px -2px 4px rgba(0, 0, 0, 0.7),
+    -2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+}
+
+.footer-tel,
+.footer-address,
+.copyright {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.footer-tel {
+  font-weight: normal;
+}
+
+.footer-address {
+  font-weight: bolder;
+}
+
+.copyright {
+  font-weight: bolder;
+  font-size: 12px;
+}
+
+.back {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: #005780;
+  width: 50px;
+  height: 50px;
+}
+
+.back img {
+  width: 50%;
+  height: 50%;
+  margin: 5px 10px 0;
+}
+
+.back p {
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 10px;
+  margin-bottom: 7px;
+}
+/*footer end*/
+
+/* Social Media */ 
+.social-media {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.social-media li a {
+  width: 50px;
+  height: 50px;
+  background-color: #66ff00;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  z-index: 9;
+  border: 1px solid #5b9d15;
+}
+
+.social-media li a svg {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  filter: invert(100%) sepia(0%) saturate(7455%) hue-rotate(57deg) brightness(108%) contrast(105%);
+}
+
+.social-media li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 0 0, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 0 0, 0 100%);
+  background-color: #fff;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.social-media li a:hover::after {
+  animation: sideClip 0.5s linear;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  opacity: 1;
+}
+
+.social-media li a:hover svg {
+  animation: fadeInLeft 0.3s linear both;
+  filter: invert(52%) sepia(85%) saturate(2286%) hue-rotate(54deg) brightness(92%) contrast(84%);
+}
+
+@keyframes sideClip {
+  0% {
+    clip-path: polygon(0 0, 100% 0, 0 0, 0 100%);
+  }
+
+  50% {
+    clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
+  }
+
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+@media(max-width: 764px) { 
+  .footer-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-image-left,
+  .footer-image-right {
+    width: 80px; 
+    height: 80px;
+  }
+
+  .footer-text {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .nav_footer ul {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .nav_footer ul li {
+    margin: 5px 0;
+  } 
+}
