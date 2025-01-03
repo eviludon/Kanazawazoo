@@ -13,13 +13,6 @@ body {
   background-color: rgba(255, 255, 255, 0.678);
 }
 
-.image-store img {
-  max-width: 80%;
-  height: 250px;
-  margin: 0px;
-  padding: 0px;
-}
-
 /* Create the "carved" line effect */
 .carved-divider {
   position: relative;
@@ -112,6 +105,7 @@ parking container start */
 
 .parking-container img:nth-child(2){
   height: 340px;
+
 }
 
 /*bus container start */
@@ -161,7 +155,7 @@ width: 1800px; /* Set width of the image */
   height: auto;
 }
 
-.google-map-container h1 {
+.google-map-container h2 {
   color: rgba(0, 0, 0, 0.473);
   margin-bottom: 15px;
 }

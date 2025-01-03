@@ -1,3 +1,4 @@
+
 @charset "utf-8";
 
 *, ::before, ::after {
@@ -5,6 +6,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Playpen Sans", serif;
+}
+
+/* Body styling */
+body {
+  background-color: rgba(255, 255, 255, 0.678);
 }
 
 .ishikawa-zoo-container {
@@ -159,9 +165,13 @@
   height: auto; /* Allow dynamic height adjustment */
   box-shadow: 0 4px 12px rgb(238, 255, 0);
   transition: box-shadow 0.3s ease-in-out;
-  &:hover {
-    box-shadow: 0 8px 24px rgb(238, 255, 0);
-  }
+  resize: both; /* Enable resizing */
+  overflow: hidden; /* Hide content overflow when resizing */
+}
+
+/* Hover effect for the video container */
+.video-container:hover {
+  box-shadow: 0 8px 24px rgb(238, 255, 0); /* Enhanced shadow on hover */
 }
 
 /* Styling for the iframe */
@@ -170,7 +180,8 @@
   height: 600px; /* Set height of iframe */
   border-radius: 10px; /* Rounded corners for the iframe */
   object-fit: cover; /* Ensures the video covers the iframe */
-  resize: both;
+  resize: both; /* Allow resizing of the iframe itself */
+  overflow: auto; /* Show scrollbars if the content overflows */
 }
 
 .shop-container {

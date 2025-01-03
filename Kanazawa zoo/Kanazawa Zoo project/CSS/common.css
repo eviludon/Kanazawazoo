@@ -7,6 +7,71 @@
   font-family: "Playpen Sans", serif;
 }
 
+/* ========== Pop Drop Animation */
+
+
+@view-transition {
+  navigation:auto;
+}
+
+@keyframes fall-back {
+  from {
+      scale: 1;
+  }
+
+  to {
+      scale: 0.8;
+  }
+}
+
+@keyframes drop-out {
+  from {
+      transform: translateY(0);
+      opacity: 1;
+  }
+
+  to {
+      transform: translateY(100%);
+      opacity: 0;
+  }
+}
+
+@keyframes pop-in {
+  from {
+      transform: translateY(100%);
+      opacity: 0;
+  }
+
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@keyframes come-in {
+  from {
+      scale: 0.8;
+  }
+
+  to {
+      scale: 1;
+  }
+}
+
+::view-transition-old(root) {
+  animation: 1s cubic-bezier(0.87, 0, 0.13, 1) both drop-out,
+  0.4s cubic-bezier(0.87, 0, 0.13, 1) both fall-back;
+}
+
+::view-transition-new(root) {
+  animation: 1s cubic-bezier(0.87, 0, 0.13, 1) both pop-in,
+  1.4s cubic-bezier(0.87, 0, 0.13, 1) both come-in;
+  animation-delay: 0.4s;
+}
+
+/* ========== Pop Drop Animation End*/
+
+
 body {
   background-color: rgba(255, 255, 255, 0.678);
 }
